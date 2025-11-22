@@ -7,21 +7,29 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+    let ticking = false;
 
-      // Update active section based on scroll position
-      const sections = ['home', 'services', 'about', 'experience', 'education', 'skills', 'certifications', 'projects', 'contact'];
-      const current = sections.find(section => {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          return rect.top <= 150 && rect.bottom >= 150;
-        }
-        return false;
-      });
-      if (current) {
-        setActiveSection(current);
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 50);
+
+          // Update active section based on scroll position
+          const sections = ['home', 'services', 'about', 'experience', 'education', 'skills', 'certifications', 'projects', 'contact'];
+          const current = sections.find(section => {
+            const element = document.getElementById(section);
+            if (element) {
+              const rect = element.getBoundingClientRect();
+              return rect.top <= 150 && rect.bottom >= 150;
+            }
+            return false;
+          });
+          if (current) {
+            setActiveSection(current);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
     window.addEventListener('scroll', handleScroll);
