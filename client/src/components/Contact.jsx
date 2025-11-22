@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Send, Mail, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -10,31 +11,24 @@ const Contact = () => {
     });
     const [status, setStatus] = useState('');
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         setStatus('sending');
 
-        try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            });
-
-            if (res.ok) {
+        emailjs.sendForm(
+            'service_ggovaa1',
+            'template_pz4jdys',
+            e.target,
+            'EIiYYLYXmwiPsBfkd'
+        )
+            .then((result) => {
+                console.log(result.text);
                 setStatus('success');
                 setFormData({ name: '', email: '', message: '' });
-            } else {
+            }, (error) => {
+                console.log(error.text);
                 setStatus('error');
-            }
-        } catch (err) {
-            console.error(err);
-            // Simulate success for demo if backend is down
-            setTimeout(() => {
-                setStatus('success');
-                setFormData({ name: '', email: '', message: '' });
-            }, 1000);
-        }
+            });
     };
 
     return (
@@ -97,6 +91,7 @@ const Contact = () => {
                             <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>Name</label>
                             <input
                                 type="text"
+                                name="name"
                                 required
                                 value={formData.name}
                                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -116,6 +111,7 @@ const Contact = () => {
                             <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>Email</label>
                             <input
                                 type="email"
+                                name="email"
                                 required
                                 value={formData.email}
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -135,6 +131,7 @@ const Contact = () => {
                             <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: '500' }}>Message</label>
                             <textarea
                                 rows="4"
+                                name="message"
                                 required
                                 value={formData.message}
                                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
