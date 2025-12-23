@@ -19,6 +19,14 @@ const Projects = () => {
             },
             {
                 _id: '2',
+                title: "LeadSpark",
+                description: "Architected a high-performance, secure MERN Stack platform featuring role-based authentication, an AI-driven chatbot, and a custom CMS with integrated payment processing, all optimized through TypeScript and smooth-scrolling UX to maximize user engagement and operational efficiency.",
+                technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Lenis Effect",",AI chat","JWT","React hlemet"],
+                link: " ",
+                image: ""
+            },
+            {
+                _id: '3',
                 title: "Portfolio",
                 description: "Responsive design using React.js and Framer Motion with dedicated sections for services and contact form.",
                 technologies: ["React.js", "Framer Motion", "CSS3"],
@@ -26,7 +34,7 @@ const Projects = () => {
                 image: "https://images.unsplash.com/photo-1545235617-9465d2a55698?w=800&q=80"
             },
             {
-                _id: '3',
+                _id: '4',
                 title: "Music Player",
                 description: "Robust audio playback system using JavaScript with play, pause, track navigation, and interactive progress bar.",
                 technologies: ["JavaScript", "CSS", "HTML"],

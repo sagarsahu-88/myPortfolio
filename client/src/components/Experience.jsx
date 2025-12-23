@@ -7,41 +7,41 @@ const Experience = () => {
         {
             company: "Keychron India Pvt Ltd",
             location: "Bangalore, Karnataka",
-            role: "Technical Head",
-            period: "Jan 2024 – Oct 2024",
+            role: "Senior Frontend Developer",
+            period: "Dec 2023 – Oct 2024",
             description: [
-                "Technical Expertise: Deep understanding of product specifications, troubleshooting, and recommendations.",
-                "Developed and integrated new features to enhance Shopify store capabilities.",
-                "Integrated shipping and supply chain solutions within Shopify.",
-                "Responsible for product demos, JSON Upgradation, and user support.",
-                "Backend support and tool creation for inventory and services.",
-                "Managed sales team schedules and performance.",
-                "Database creation & updates for SKUs and stocks."
+                "Led technical strategy for the e-commerce platform, overseeing Shopify Liquid theme development and Online Store 2.0 migrations.",
+                "Developed high-converting, React-based landing pages and feedback systems to maximize lead generation for new product launches.",
+                "Acted as a senior technical escalation point, debugging and leading the adoption of new front-end technologies for feature expansion.",
+                "Engineered a custom Stock Data Management tool and POS Dashboard using Node.js/database integration for streamlined inventory.",
+                "Optimized critical site performance by implementing front-end caching strategies and efficient dynamic data rendering for the shopping experience.",
+                
             ]
         },
         {
             company: "Blackbuck (Zinka Logistic Pvt Ltd)",
             location: "Bangalore, Karnataka",
-            role: "Senior Quality Analyst",
-            period: "Dec 2022 – Nov 2023",
+            role: "Associate Engineer",
+            period: "Nov 2022 – Nov 2023",
             description: [
-                "Project: Data Mining & Support, Features implementation for Govt of Maharashtra and Himachal Pradesh.",
-                "Worked with MySQL, Excel Advanced, Metabase cloud, Postman.",
-                "GPS Device Logic: Interpreting commands for location data (latitude, longitude).",
-                "Packet Sender: Managing data transmission efficiently.",
-                "API Integrations: Integrating external systems with the database."
+                "Developed and deployed a core internal dashboard in React, focusing on responsive design for critical user data management (CRUD operations).",
+                "Leveraged SQL and Metabase visualizations to display key user activity metrics, enabling data-driven decision-making for operational teams.",
+                "Integrated and tested real-time GPS/telematics data streams using tools like Packet Sender to simulate and validate live data ingestion.",
+                "Refactored and designed reusable React components to significantly improve dashboard UI/UX and enhance the component-based architecture.",
+                "Ensured high data integrity and security while managing data flow between the SQL database and the presentation layer."
             ]
         },
         {
             company: "Cozentus Technology Pvt Ltd",
             location: "Bhubaneswar, Odisha",
-            role: "Junior Software Engineer",
-            period: "Jan 2022 – Aug 2022",
+            role: "Junior Engineer",
+            period: "Jan 2022 – Sep 2022",
             description: [
-                "Project: Asset Management System (.NET, React, MySQL).",
-                "Developed Asset Registry for detailed asset tracking.",
-                "Implemented Search and Filter functionalities.",
-                "Built Uploads and Attachments features for photos and manuals."
+                "Engineered the real-time operational dashboard UI in React, focusing on container tracking and rapid status updates for critical logistics data.",
+                "Utilized modern React hooks and functional components to build highly responsive and reusable UI elements for complex data display.",
+                "Implemented real-time data synchronization to instantly update map interfaces and status cards, drastically improving operational visibility.",
+                "Integrated geospatial mapping APIs to visualize container routes and movements, enhancing the application's core shipment tracking functionality.",
+                 "Optimized data rendering and performance on the ASP.NET MVC backend/React frontend hybrid stack to efficiently handle high-volume data streams."
             ]
         }
     ];

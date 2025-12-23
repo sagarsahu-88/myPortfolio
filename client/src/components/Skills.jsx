@@ -20,6 +20,11 @@ const Skills = () => {
             skills: ["Git", "GitHub", "Docker", "Selenium", "Postman", "VS Code", "MongoDB Compass", "Virtual Box", "XAMPP", "Cloud-Based Deployment", "CI/CD", "Azure Data Fundamentals", "Linux", "Windows"]
         },
         {
+            title: "AI Tools",
+            icon: <Database size={30} />,
+            skills: ["Antigravity", "Cursor AI", "n8n Cloud", "warp.dev", "ChatGPT"]
+        },
+        {
             title: "Professional & Soft Skills",
             icon: <TrendingUp size={30} />,
             skills: ["SDLC", "Unit Testing (Jest)", "Debugging", "Problem Solving", "Communication", "Financial Analysis", "Investors Awareness"]
@@ -27,7 +32,7 @@ const Skills = () => {
         {
             title: "Digital Marketing & Freelancing",
             icon: <PenTool size={30} />,
-            skills: ["SEO", "Content Writing", "Videography", "Branding", "Logo Design", "Meta Campaigning", "Social Media Handling", "Podcast Shoot"]
+            skills: ["SEO", "Content Writing", "Videography", "Branding", "Logo Design", "Meta Campaigning", "Social Media Handling", "Performance marketing"]
         }
     ];
 
