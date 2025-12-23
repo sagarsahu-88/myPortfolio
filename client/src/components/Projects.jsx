@@ -23,7 +23,7 @@ const Projects = () => {
                 description: "Architected a high-performance, secure MERN Stack platform featuring role-based authentication, an AI-driven chatbot, and a custom CMS with integrated payment processing, all optimized through TypeScript and smooth-scrolling UX to maximize user engagement and operational efficiency.",
                 technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Lenis Effect",",AI chat","JWT","React hlemet"],
                 link: " ",
-                image: ""
+                image: "https://plus.unsplash.com/premium_photo-1683583961436-fa9efb9f72d7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             },
             {
                 _id: '3',
