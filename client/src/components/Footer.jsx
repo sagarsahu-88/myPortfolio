@@ -45,7 +45,7 @@ const Footer = () => {
                             </motion.a>
                             <motion.a
                                 whileHover={{ y: -5 }}
-                                href="https://linkedin.com"
+                                href="linkedin.com/in/sagar-sahu-b9a936393"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="glass-card"
